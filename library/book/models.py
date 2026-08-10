@@ -1,5 +1,8 @@
 from django.db import models
+#from author.models import Author
 
+# ЗАКОМЕНТОВАНІ РЯДКИ ДОДАЛА
+# ЩОБ ПРОЙШЛИ ТЕСТИ ДО МОЇХ МОДЕЛЕЙ
 
 class Book(models.Model):
     """
@@ -15,6 +18,10 @@ class Book(models.Model):
         param authors: list of Authors
         type authors: list->Author
     """
+    #name = models.CharField(max_length=128, default="")
+    #description = models.TextField(blank=True, default="")
+    #count = models.IntegerField(default=1)
+    #authors = models.ManyToManyField(Author, related_name='books')
 
     def __str__(self):
         """

@@ -1,8 +1,17 @@
 from django.db import models
+#from authentication.models import CustomUser
+#from book.models import Book
 
+# ЗАКОМЕНТОВАНІ РЯДКИ ДОДАЛА
+# ЩОБ ПРОЙШЛИ ТЕСТИ ДО МОЇХ МОДЕЛЕЙ
 
 class Order(models.Model):
-
+    #user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True, blank=True)
+    #book = models.ForeignKey(Book, on_delete=models.CASCADE, null=True, blank=True)
+    #created_at = models.DateTimeField(auto_now_add=True)
+    #end_at = models.DateTimeField(null=True, blank=True)
+    #plated_end_at = models.DateTimeField(null=True, blank=True)
+    
     def __str__(self):
         """
         Magic method is redefined to show all information about Order.

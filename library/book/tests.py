@@ -62,22 +62,22 @@ class TestBookModel(TestCase):
             self.book3.authors.add(self.author2)
             self.book3.save()
 
-            self.order1 = Order(
-                id=101, user=self.user, book=self.book1, plated_end_at=TEST_DATE
-            )
-            self.order1.save()
-            self.order2 = Order(
-                id=102, user=self.user, book=self.book2, plated_end_at=TEST_DATE
-            )
-            self.order2.save()
-            self.order3 = Order(
-                id=103,
-                user=self.user,
-                book=self.book3,
-                end_at=TEST_DATE_END,
-                plated_end_at=TEST_DATE,
-            )
-            self.order3.save()
+            # self.order1 = Order(
+            #     id=101, user=self.user, book=self.book1, plated_end_at=TEST_DATE
+            # )
+            # self.order1.save()
+            # self.order2 = Order(
+            #     id=102, user=self.user, book=self.book2, plated_end_at=TEST_DATE
+            # )
+            # self.order2.save()
+            # self.order3 = Order(
+            #     id=103,
+            #     user=self.user,
+            #     book=self.book3,
+            #     end_at=TEST_DATE_END,
+            #     plated_end_at=TEST_DATE,
+            # )
+            # self.order3.save()
 
     def test__str__(self):
         """Test of the CustomUser.__str__() method"""

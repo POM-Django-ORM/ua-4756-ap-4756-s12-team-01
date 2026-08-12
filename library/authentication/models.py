@@ -34,6 +34,7 @@ class CustomUser(models.Model):
         type updated_at: bool
 
     """
+    id = models.AutoField(primary_key=True)
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
     middle_name = models.CharField(max_length=20)

@@ -3,7 +3,7 @@
     {
       "name": "Django Tests",
       "setup": "pip install -r requirements.txt",
-      "run": "python manage.py test",
+      "run": "python ./library/manage.py test",
       "input": "",
       "output": "",
       "comparison": "included",
